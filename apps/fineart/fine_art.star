@@ -14,7 +14,7 @@ load("render.star", "render")
 load("schema.star", "schema")
 load("time.star", "time")
 
-MS_PER_FRAME = 32
+MS_PER_FRAME = 64
 FRAMES_PER_SECOND = 1000 / MS_PER_FRAME
 MAX_APP_TIME = 15
 MARQUEE_OFFSET_START = 10
