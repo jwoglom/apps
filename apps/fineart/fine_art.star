@@ -27,8 +27,8 @@ def main(config):
     configIndex = config.str("index")
 
     # Tidbyt animates slower than pixlet serve does
-    dev = config.bool("dev", False)
-    set_prod_adjust_ratio(1 if dev else 0.44)
+    speed = float(config.get("speed", 1.0) or 1.0)
+    set_prod_adjust_ratio(speed)
     frame_delay = math.round(MS_PER_FRAME * get_prod_adjust_ratio())
 
     if rotate_daily:
