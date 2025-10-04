@@ -134,7 +134,7 @@ def get_caption(text):
             ),
         )
 
-    return render.Animation(children = frames), duration / FRAMES_PER_SECOND
+    return render.Animation(children = frames), 2 * duration / FRAMES_PER_SECOND
 
 def get_fade_opacity(i, duration):
     if i < 10:
